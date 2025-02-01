@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Student Registration System" />
+  <meta name="description"
+    content="Efficiently manage student enrollments with our intuitive Student Registration System. Designed for seamless registration, course management, and administrative oversight." />
+  <meta name="keywords"
+    content="Student Registration, Course Enrollment, Education System, Online Registration, School Management" />
+
+  <title>Student Registration System | Enrollment</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Student Registration System</h1>
+    <p>
+      Easily manage and organize student records with students can register
+      their details such as name, student ID, E-mail, and contact number.
+    </p>
+  </header>
+  <main>
+    <!-- Form Section -->
+    <section id="registration-form">
+      <h2>Register a New Student</h2>
+      <form id="studentForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required placeholder="John Doe" autocomplete="off" />
+
+        <label for="studentId">Student ID:</label>
+        <input type="number" id="studentId" name="studentId" required placeholder="001594" />
+
+        <label for="emailID">Email ID:</label>
+        <input type="email" id="emailId" name="emailId" required placeholder="example@mail.com" />
+
+        <label for="contactNo">Contact No:</label>
+        <input type="number" id="contactNo" name="contactNo" required placeholder="9876-543-210" autocomplete="off" />
+
+        <button type="button" id="addStudent">Add Student</button>
+        <!-- <button type="button" id="updateStudent" style="display: none;">update Student</button> -->
+      </form>
+    </section>
+
+    <!-- Display Section -->
+    <section id="studentRecords">
+      <h2>Registered Students</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Student ID</th>
+            <th>Email ID</th>
+            <th>Contact No</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="recordsTable"></tbody>
+        <!-- Dynamic Content -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
