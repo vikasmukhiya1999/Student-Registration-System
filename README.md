@@ -35,6 +35,6 @@ This project includes a structured `index.html` with appropriate meta tags and t
 4. Edit or delete records as needed.
 
 ## Live Demo
-[Live Hosted Link](https://your-live-demo-link.com)
+[Live Hosted Link](https://student-registration-system947.netlify.app/)
 
 
